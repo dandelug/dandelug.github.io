@@ -1,0 +1,57 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar unique-color-dark" [containerInside]="true">
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/images/lg_letras.png" height="30" alt="" />
+        </a>
+    </mdb-navbar-brand>
+
+    <links>
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['home']">
+                    Inicio
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['nosotros']">
+                Nosotros</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['servicios']">
+                Servicios</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown" dropdown routerLinkActive="active" style="display: none;">
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Servicios<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown-menu-right dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','consContable']">Consultoría contable</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','consTributaria']">Consultoría tributaria</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','reinCostos']">Reingeniería de costos de producción</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','audiExtInt']">Auditoría externa e interna</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','evalFinancieras']">Evaluaciones financieras</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','lavaActivos']">Lavado de activos</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','capacitaciones']">Capacitaciones y desarrollo profesional</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect [routerLink]="['servicios','servLegales']">Servicios legales societarios</a>
+                </div>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['clientes']">
+                    Experiencias</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['socios']">
+                    Socios</a>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+    </links>
+
+</mdb-navbar>
+<!--/.Navbar-->
