@@ -1,8 +1,8 @@
 <!--Navbar-->
-<mdb-navbar SideClass="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar unique-color-dark">
+<mdb-navbar SideClass="navbar navbar-expand-sm navbar-dark fixed-top scrolling-navbar unique-color-dark" style="display: block;">
     <!-- Navbar brand -->
     <mdb-navbar-brand>
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" [routerLink]="['home']">
             <img src="../../../assets/images/lg_letras.png" height="25" alt="" />
         </a>
     </mdb-navbar-brand>
@@ -54,4 +54,3 @@
     </links>
 
 </mdb-navbar>
-<!--/.Navbar-->
